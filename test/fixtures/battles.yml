@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  format: MyString
+  leader_1: MyString
+  lerder_2: MyString
+  room: 1
+  content: MyString
+  lock: false
+
+two:
+  format: MyString
+  leader_1: MyString
+  lerder_2: MyString
+  room: 1
+  content: MyString
+  lock: false
