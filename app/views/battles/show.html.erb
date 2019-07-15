@@ -1,10 +1,14 @@
-<h1>対戦相手情報</h1>
-
-<ul>
-  <li><%= @battle.format %></li>
-  <li><%= @battle.leader_1 %></li>
-  <li><%= @battle.leader_2 %></li>
-  <li><%= @battle.room %></li>
-  <li><%= @battle.content %></li>
-</ul>
+<div id="recruitment">
+  <div id="recruitment-box">   
+    <h1>対戦相手情報</h1>
+    <ul>
+      <li>フォーマット：<%= @battle.format %></li>
+      <li>リーダー１：<%= @battle.leader_1 %></li>
+      <li>リーダー２：<%= @battle.leader_2 %></li>
+      <li>ルームID：<%= @battle.room %></li>
+      <li>コメント：<%= @battle.content %></li>
+    </ul>
+    <%= link_to "Topページ", root_url %>
+  </div>
+</div>
 

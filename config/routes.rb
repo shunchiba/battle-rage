@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: "toppages#index"
+  get 'descriptions/show'
   get 'battles/index'
   get 'battles/show'
   get 'battles/new'

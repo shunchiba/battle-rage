@@ -1,3 +1,153 @@
 // Place all the styles related to the toppages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container{
+    position: relative;
+    height: 100vh;
+    min-height: 300px;
+}
+
+ul {
+  list-style: none;
+}
+body {
+    background: url(logo_black.png) no-repeat center center;
+    background-size: cover;
+}
+
+.navbar a {
+  color: black;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+  background: none;
+}
+
+.jumbotron-extend {
+    position: relative;
+    height: 100vh;
+    min-height: 300px;
+}
+
+#big-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  #left-button {
+    width: 48%;
+    height: 450px;
+    position: relative;
+    background: red;
+    opacity: 0.8;
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+      font-size: 35px;
+      text-shadow: 4px 4px 4px black;
+    }
+  }
+  #right-button {
+    width: 48%;
+    height: 450px;
+    position: relative;
+    background: blue;
+    opacity: 0.8;
+    // box-shadow: 4px 4px 3px blue;
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      color: white;
+      font-weight: bold;
+      font-size: 35px;
+      text-shadow: 4px 4px 4px black;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #big-buttons {
+    flex-direction: column;
+    justify-content: space-between;
+    #left-button {
+      width: 100%;
+      height: 200px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      a {
+        font-size: 24px;
+      }
+    }
+    #right-button {
+      width: 100%;
+      height: 200px;
+      font-size: 10px;
+      a {
+        font-size: 24px;
+      }
+    }
+  }  
+}
+
+.btn-square-little-rich {
+  position: relative;
+  bottom: 50%;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #FFF;
+  background: #03A9F4;/*色*/
+  border: solid 1px #0f9ada;/*線色*/
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+  text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+
+.btn-square-little-rich:active {
+  /*押したとき*/
+  border: solid 1px #03A9F4;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#recruitment {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+	padding: 10%;
+}
+
+#recruitment-box {
+	width: 50%;
+  height: auto;
+  background: white;
+  opacity: 0.95;
+  padding: 1em;
+}
+
+#description{
+  width: auto;
+  height: auto;
+  background: white;
+  opacity: 0.95;
+  padding: 1em;
+} 
+
+#text{
+  color: white;
+}

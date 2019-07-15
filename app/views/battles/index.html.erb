@@ -1,22 +1,24 @@
 <div class="container">
-  <h1>対戦募集一覧</h1>
-  <div class="row">
-    <% @battles.each do |battle| %>
-      <div class="col-12 col-sm-3 mb-4">
-        <div class="card text-center">
-          <div class="card-body">
-            <h2 class="card-title small"><%=link_to battle.id,battle %> :<%= battle.format %></h2>
-            <p class="card-text"><%= battle.leader_1 %></p>
-            <p class="card-text"><%= battle.leader_2 %></p>
-            <p class="card-text"><small class="text-muted"><%= time_ago_in_words(battle.created_at) %></small></p>
+  <div class="text-center">
+    <h1 class="text-white bg-dark">対戦募集一覧</h1>
+    <div class="row">
+      <% @battles.each do |battle| %>
+        <div class="col-12 col-sm-3 mb-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <h2 class="card-title small"><%=link_to battle.id,battle %> :<%= battle.format %></h2>
+              <p class="card-text"><%= battle.leader_1 %></p>
+              <p class="card-text"><%= battle.leader_2 %></p>
+              <p class="card-text"><small class="text-muted"><%= time_ago_in_words(battle.created_at) %></small></p>
+            </div>
           </div>
         </div>
+      <% end %>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <%= link_to "Topページ", root_url %>
       </div>
-    <% end %>
-  </div>
-  <div class="row">
-    <div class="col-12">
-      <%= link_to "Topページ", root_url %>
     </div>
   </div>
 </div>

@@ -1,29 +1,35 @@
-<h1>対戦ルーム作成</h1>
 
-<%= form_with(model: @battle, local: true) do |f| %>
-  <ul>
-    <li>
-      <%= f.label :format, "フォーマット" %>
-      <%= f.select :format, [["ローテーション","ローテーション"],["アンリミッテッド","アンリミッテッド"]] %>
-    </li>
-    <li>
-      <%= f.label :leader_1, "リーダー1" %>
-      <%= f.select :leader_1, [["エルフ","エルフ"],["ロイヤル","ロイヤル"],["ウィッチ","ウィッチ"],["ドラゴン","ドラゴン"],["ネクロマンサー","ネクロマンサー"],["ヴァンパイア","ヴァンパイア"],["ビショップ","ビショップ"],["ネメシス","ネメシス"]] %>
-    </li>
-    <li>
-      <%= f.label :leader_2, "リーダー2" %>
-      <%= f.select :leader_2, [["エルフ","エルフ"],["ロイヤル","ロイヤル"],["ウィッチ","ウィッチ"],["ドラゴン","ドラゴン"],["ネクロマンサー","ネクロマンサー"],["ヴァンパイア","ヴァンパイア"],["ビショップ","ビショップ"],["ネメシス","ネメシス"]] %>
-    </li>
-    <li>
-      <%= f.label :room, "ルームNo." %>
-      <%= f.text_field :room %>
-    </li>
-    <li>
-      <%= f.label :content, "コメント" %>
-      <%= f.text_field :content %>
-    </li>
-  </ul>
-  <%= f.submit "投稿" %>
-<% end %>
-
-<%= link_to "Topページ", root_url %>
+<div id="recruitment">
+  <div id="recruitment-box">
+    <h1>対戦ルーム作成</h1>
+    <div "col-12 col-md-6">
+      <div class="form-group">
+        <%= form_with(model: @battle, local: true) do |f| %>
+            <div >
+              <%= f.label :format, "フォーマット" %>
+              <%= f.select :format, [["ローテーション","ローテーション"],["アンリミッテッド","アンリミッテッド"]], class: "form-control" %>
+            </div>
+            <div> 
+              <%= f.label :leader_1, "リーダー1" %>
+              <%= f.select :leader_1, [["エルフ","エルフ"],["ロイヤル","ロイヤル"],["ウィッチ","ウィッチ"],["ドラゴン","ドラゴン"],["ネクロマンサー","ネクロマンサー"],["ヴァンパイア","ヴァンパイア"],["ビショップ","ビショップ"],["ネメシス","ネメシス"]] %>
+            </div>
+  
+            <div>
+              <%= f.label :leader_2, "リーダー2" %>
+              <%= f.select :leader_2, [["エルフ","エルフ"],["ロイヤル","ロイヤル"],["ウィッチ","ウィッチ"],["ドラゴン","ドラゴン"],["ネクロマンサー","ネクロマンサー"],["ヴァンパイア","ヴァンパイア"],["ビショップ","ビショップ"],["ネメシス","ネメシス"]] %>
+            </div>
+            <div>
+              <%= f.label :room, "ルームID" %>
+              <%= f.text_field :room %>
+            </div>
+            <div>
+              <%= f.label :content, "コメント" %>
+              <%= f.text_field :content %>
+            </div>
+          <%= f.submit "投稿" %>
+        <% end %>
+      </div>
+    </div>
+      <%= link_to "Topページ", root_url %>
+    </div>
+</div>

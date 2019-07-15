@@ -1,3 +1,28 @@
-<h1>SHADOWVERSE大会練習マッチングアプリ</h1>
-<%= link_to "対戦募集一覧", battles_path %>
-<%= link_to "対戦ルーム作成", new_battle_path %>
+<header>
+  <nav class="navbar navbar-expand bg-secondary">
+    <ul class="mr-auto navbar-nav"></ul>
+    <ul class="navbar-nav">
+      <li class="navbar-item text-right"><%= link_to "利用方法", descriptions_show_path %></li>
+    </ul>
+  </nav>
+</header>
+<div class="jumbotron jumbotron-extend">
+  <div class="text-center">
+   <h1 class="text-white bg-dark">シャドウバースBO3形式専用マッチング</h1>
+    <div id="big-buttons">
+      <div id="left-button">
+        <%= link_to "対戦募集一覧", battles_path %>
+      </div>
+      <div id="right-button">
+        <%= link_to new_battle_path do %>
+          対戦ルーム<br>
+          作成
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  

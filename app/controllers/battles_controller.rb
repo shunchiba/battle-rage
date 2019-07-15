@@ -12,7 +12,7 @@ class BattlesController < ApplicationController
          @battle.save
          render :show
       else
-        flash[:lock] = "既にロックされています。"
+        flash[:danger] = "既にロックされています。"
         redirect_to battles_path
       end
     end
