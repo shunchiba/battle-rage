@@ -26,5 +26,9 @@ test:
   database: battle-rage_test
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: battle-rage_production
+  username: battle-rage
+  password: <%= ENV['BATTLE-RAGE_DATABASE_PASSWORD'] %>
