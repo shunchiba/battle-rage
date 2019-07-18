@@ -1,0 +1,8 @@
+ja:
+  activerecord:
+    models:
+     battle: "対戦"
+    
+    attributes:
+      battle:
+        room: "ルームID"
