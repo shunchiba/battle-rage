@@ -133,11 +133,14 @@ body {
 }
 
 #recruitment-box {
-	width: 50%;
+	width: auto;
   height: auto;
   background: white;
   opacity: 0.95;
   padding: 1em;
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 #description{

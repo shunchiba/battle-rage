@@ -5,7 +5,7 @@
     <div "col-12 col-md-6">
       <div class="form-group">
         <%= form_with(model: @battle, local: true) do |f| %>
-            <div >
+            <div>
               <%= f.label :format, "フォーマット" %>
               <%= f.select :format, [["ローテーション","ローテーション"],["アンリミッテッド","アンリミッテッド"]], class: "form-control" %>
             </div>
